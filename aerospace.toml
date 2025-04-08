@@ -61,8 +61,8 @@ automatically-unhide-macos-hidden-apps = false
 #                 See:
 #                 https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [gaps]
-    inner.horizontal = 7
-    inner.vertical =   7
+    inner.horizontal = 5
+    inner.vertical =   5
     outer.left =       5
     outer.bottom =     5
     outer.top =        5
@@ -86,8 +86,8 @@ automatically-unhide-macos-hidden-apps = false
     # cmd-alt-ctrl-enter = 'exec-and-forget open -n /opt/homebrew/Caskroom/ghostty/1.1.2/Ghostty.app/'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#layout
-    cmd-alt-ctrl-slash = 'layout tiles horizontal vertical'
-    cmd-alt-ctrl-comma = 'layout accordion horizontal vertical'
+    cmd-alt-ctrl-slash = 'layout tiles vertical horizontal'
+    cmd-alt-ctrl-comma = 'layout accordion vertical'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#focus
     cmd-alt-ctrl-h = 'focus left'
@@ -115,6 +115,7 @@ automatically-unhide-macos-hidden-apps = false
     cmd-alt-ctrl-7 = 'workspace 7'
     cmd-alt-ctrl-8 = 'workspace 8'
     cmd-alt-ctrl-9 = 'workspace 9'
+    cmd-alt-ctrl-0 = 'workspace 0'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
     cmd-alt-ctrl-shift-1 = ['move-node-to-workspace 1', 'workspace 1']
@@ -126,6 +127,7 @@ automatically-unhide-macos-hidden-apps = false
     cmd-alt-ctrl-shift-7 = ['move-node-to-workspace 7', 'workspace 7']
     cmd-alt-ctrl-shift-8 = ['move-node-to-workspace 8', 'workspace 8']
     cmd-alt-ctrl-shift-9 = ['move-node-to-workspace 9', 'workspace 9']
+    cmd-alt-ctrl-shift-0 = ['move-node-to-workspace 0', 'workspace 0']
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
     cmd-alt-ctrl-tab = 'workspace-back-and-forth'
@@ -139,6 +141,7 @@ automatically-unhide-macos-hidden-apps = false
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
 [mode.service.binding]
     esc = ['reload-config', 'mode main']
+    semicolon = ['reload-config', 'mode main']
     r = ['flatten-workspace-tree', 'mode main'] # reset layout
     f = ['layout floating tiling', 'mode main'] # Toggle between floating and tiling layout
     backspace = ['close-all-windows-but-current', 'mode main']
