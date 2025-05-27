@@ -68,6 +68,18 @@ automatically-unhide-macos-hidden-apps = false
     outer.top =        5
     outer.right =      5
 
+[workspace-to-monitor-force-assignment]
+1 = "main"
+2 = "main"
+3 = "main"
+4 = "main"
+5 = ["secondary", "main"]
+6 = ["secondary", "main"]
+7 = ["secondary", "main"]
+8 = "main"
+9 = "main"
+0 = "main"
+
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
 # 'main' binding mode must always be present
@@ -135,7 +147,7 @@ automatically-unhide-macos-hidden-apps = false
     cmd-alt-ctrl-shift-tab = 'move-workspace-to-monitor --wrap-around next'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#mode
-    cmd-alt-ctrl-shift-semicolon = 'mode service'
+    cmd-alt-ctrl-semicolon = 'mode service'
 
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
