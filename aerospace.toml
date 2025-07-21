@@ -68,7 +68,7 @@ automatically-unhide-macos-hidden-apps = false
     cmd-alt-ctrl-3 = 'workspace --auto-back-and-forth NOTES'
     cmd-alt-ctrl-4 = 'workspace --auto-back-and-forth TODO'
     cmd-alt-ctrl-5 = 'workspace --auto-back-and-forth READ'
-    cmd-alt-ctrl-6 = 'workspace --auto-back-and-forth 6'
+    cmd-alt-ctrl-6 = 'workspace --auto-back-and-forth SEARCH'
     cmd-alt-ctrl-7 = 'workspace --auto-back-and-forth 7'
     cmd-alt-ctrl-8 = 'workspace --auto-back-and-forth MEET'
     cmd-alt-ctrl-9 = 'workspace --auto-back-and-forth MAIL'
@@ -101,7 +101,7 @@ automatically-unhide-macos-hidden-apps = false
     cmd-alt-ctrl-shift-3 = ['move-node-to-workspace NOTES', 'workspace NOTES']
     cmd-alt-ctrl-shift-4 = ['move-node-to-workspace TODO', 'workspace TODO']
     cmd-alt-ctrl-shift-5 = ['move-node-to-workspace READ', 'workspace READ']
-    cmd-alt-ctrl-shift-6 = ['move-node-to-workspace 6', 'workspace 6']
+    cmd-alt-ctrl-shift-6 = ['move-node-to-workspace 6', 'workspace SEARCH']
     cmd-alt-ctrl-shift-7 = ['move-node-to-workspace 7', 'workspace 7']
     cmd-alt-ctrl-shift-8 = ['move-node-to-workspace MEET', 'workspace MEET']
     cmd-alt-ctrl-shift-9 = ['move-node-to-workspace MAIL', 'workspace MAIL']
@@ -166,6 +166,9 @@ automatically-unhide-macos-hidden-apps = false
 [[on-window-detected]]
   if.app-id = 'md.obsidian'
   run = 'move-node-to-workspace NOTES'
+[[on-window-detected]]
+  if.app-id = 'com.momenta.agenda.macos'
+  run = 'move-node-to-workspace NOTES'
 
 [[on-window-detected]]
   if.app-id = 'com.devon-technologies.think'
@@ -174,6 +177,10 @@ automatically-unhide-macos-hidden-apps = false
 [[on-window-detected]]
   if.app-id = 'com.omnigroup.OmniFocus4'
   run = 'move-node-to-workspace TODO'
+
+[[on-window-detected]]
+  if.app-id = 'com.devon-technologies.agent'
+  run = 'move-node-to-workspace SEARCH'
 
 [[on-window-detected]]
   if.app-id = 'com.microsoft.teams2'
