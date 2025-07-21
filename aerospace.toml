@@ -9,38 +9,35 @@ start-at-login = true
 enable-normalization-flatten-containers = true
 enable-normalization-opposite-orientation-for-nested-containers = true
 
-accordion-padding = 30
-
-default-root-container-layout = 'accordion'
-
-default-root-container-orientation = 'auto'
-
-on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
-
 automatically-unhide-macos-hidden-apps = false
+
+accordion-padding = 35
+default-root-container-layout = 'accordion'
+default-root-container-orientation = 'vertical'
+on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 
 [key-mapping]
     preset = 'qwerty'
-[gaps]
 
-    inner.horizontal = 5
-    inner.vertical =   5
-    outer.left =       5
-    outer.bottom =     5
-    outer.top =        5
-    outer.right =      5
+[gaps]
+  inner.horizontal = 5
+  inner.vertical =   5
+  outer.left =       5
+  outer.bottom =     5
+  outer.top =        5
+  outer.right =      5
 
 [workspace-to-monitor-force-assignment]
-1 = "main"
-2 = "main"
-3 = "main"
-4 = "main"
-5 = ["secondary", "main"]
-6 = ["secondary", "main"]
-7 = ["secondary", "main"]
-8 = "main"
-9 = "main"
-0 = "main"
+  1 = "main"
+  2 = "main"
+  3 = "main"
+  4 = "main"
+  5 = ["secondary", "main"]
+  6 = ["secondary", "main"]
+  7 = ["secondary", "main"]
+  8 = "main"
+  9 = "main"
+  0 = "main"
 
 [mode.main.binding]
     cmd-alt-ctrl-slash = 'layout tiles vertical horizontal'
