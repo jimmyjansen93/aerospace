@@ -159,6 +159,9 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 [[on-window-detected]]
   if.app-id = 'com.apple.Safari'
   run = 'move-node-to-workspace BROWSER'
+[[on-window-detected]]
+  if.app-id = 'com.google.Chrome'
+  run = 'move-node-to-workspace BROWSER'
 
 [[on-window-detected]]
   if.app-id = 'md.obsidian'
