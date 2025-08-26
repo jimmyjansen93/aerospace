@@ -155,6 +155,15 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 [[on-window-detected]]
   if.app-id = 'com.jetbrains.intellij'
   run = 'move-node-to-workspace CODE'
+[[on-window-detected]]
+  if.app-id = 'com.jetbrains.WebStorm'
+  run = 'move-node-to-workspace CODE'
+[[on-window-detected]]
+  if.app-id = 'com.jetbrains.rustrover'
+  run = 'move-node-to-workspace CODE'
+[[on-window-detected]]
+  if.app-id = 'com.jetbrains.Clion'
+  run = 'move-node-to-workspace CODE'
 
 [[on-window-detected]]
   if.app-id = 'com.apple.Safari'
