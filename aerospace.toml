@@ -80,7 +80,7 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
     # alt-i = 'workspace I'
     cmd-alt-ctrl-m = 'workspace --auto-back-and-forth MUSIC'
     # alt-n = 'workspace N'
-    # alt-o = 'workspace O'
+    cmd-alt-ctrl-o = 'workspace --auto-back-and-forth LLM'
     # alt-p = 'workspace P'
     # alt-q = 'workspace Q'
     # alt-r = 'workspace R'
@@ -113,7 +113,7 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
     # cmd-shift-i = 'move-node-to-workspace I'
     cmd-alt-ctrl-shift-m = 'move-node-to-workspace MUSIC'
     # cmd-shift-n = 'move-node-to-workspace N'
-    # cmd-shift-o = 'move-node-to-workspace O'
+    cmd-alt-ctrl-shift-o = 'move-node-to-workspace LLM'
     # cmd-shift-p = 'move-node-to-workspace P'
     # cmd-shift-q = 'move-node-to-workspace Q'
     # cmd-shift-r = 'move-node-to-workspace R'
@@ -202,6 +202,10 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 [[on-window-detected]]
   if.app-id = 'com.tinyspeck.slackmacgap'
   run = 'move-node-to-workspace SLACK'
+
+[[on-window-detected]]
+  if.app-id = 'com.anthropic.claudefordesktop'
+  run = 'move-node-to-workspace LLM'
 
 [[on-window-detected]]
   if.app-id = 'com.apple.systempreferences'
